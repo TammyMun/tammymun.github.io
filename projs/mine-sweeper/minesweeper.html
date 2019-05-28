@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tammy's Minesweeper</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
+</head>
+
+<body onload="initGame()">
+    <h1>Mine Sweeper</h1>
+    <div class="container">
+        <button id="0" class="lvl1 btn" onclick="levelClicked(this)">Beginner</button>
+        <button id="1" class="lvl2 btn" onclick="levelClicked(this)">Medium</button>
+        <button id="2" class="lvl3 btn" onclick="levelClicked(this)">Expert</button>
+        <div id="smiley"></div>
+        <div id="hall-fame" class="hall">
+            <p>HALL OF FAME</p>
+            <p><b>Best time for Beginner:</b>
+                <p id="beginner"></p>
+            </p>
+            <p><b>Best time for Medium:</b>
+                <p id="medium"></p>
+            </p>
+            <p><b>Best time for Expert:</b>
+                <p id="expert"></p>
+            </p>
+        </div>
+        <div class="lives">LIVES:</div>
+        <div id="hints" class="hints">HINTS:</div>
+        <div class="clock">TIME: 0</div>
+        <button id="hint-btn" class="btn" onclick="giveHint(this)">Give me a hint!</button>
+    </div>
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+    <div id="modalwin" class="modal">
+        <p class="message">You won! <br>That's because you're kind of awesome!</p>
+        <button class="btn" onclick="restart(this)">Play again</button>
+    </div>
+    </div>
+    <div id="modalfail" class="modal">
+        <p class="message">Oh man! <br>Better luck next time...</p>
+        <button class="btn" onclick="restart(this)">Let me try that again</button>
+    </div>
+    </div>
+    <div id="modalscore" class="modal">
+        <p class="message">You broke the record! <br>Write your name to the hall of fame:</p>
+        <div class="options">
+            <input type="text" name="enter" class="enter" id="best-score" value="" />
+            <button class="btn" onclick="savePrintUser(this)">Submit</button>
+        </div>
+    </div>
+    <div><button id="restart" class="btn restart" onclick="restart(this)">Restart</button></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
