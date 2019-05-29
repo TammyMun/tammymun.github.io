@@ -31,3 +31,12 @@ function renderProjModal() {
                     <i class="fa fa-times"></i>
                     Close Project</button> */
 }
+
+function getProjById() {
+
+}
+
+function getProjects() {
+
+}
+
