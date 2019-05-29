@@ -756,3 +756,7 @@ fieldset[disabled] .btn-xl:hover {
     color: #fed136;
     background-color: white;
 }
+.highlight {
+    background-color: #f8acff;
+    background-image: linear-gradient(to right, rgb(162, 0, 255) 0%, #f8acff 100%);
+}
