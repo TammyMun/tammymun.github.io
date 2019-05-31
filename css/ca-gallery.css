@@ -229,6 +229,8 @@ header.masthead .intro-text .intro-heading {
         line-height: 40px;
         margin-bottom: 25px;
         font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        text-align: left;
+        width: max-content;
     }
     header.masthead .intro-text .intro-heading {
         font-size: 75px;
@@ -237,6 +239,9 @@ header.masthead .intro-text .intro-heading {
         margin-bottom: 50px;
         font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         text-transform: uppercase;
+        /* position: relative FIX THIS ACCORDINGLY */
+        text-align: left;
+        width: max-content;
     }
 }
 .service-heading {
